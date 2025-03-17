@@ -1,0 +1,29 @@
+@import '../base/variables'
+@import '../base/mixins'
+
+.socials-list
+	margin: 0
+	padding: 0
+	list-style: none
+	display: flex
+	&__item
+		flex-shrink: 0
+		margin-right: toRem(8)
+		&:last-child
+			margin-right: 0
+	&__link
+		display: flex
+		align-items: center
+		justify-content: center
+		width: toRem(40)
+		height: toRem(40)
+		text-decoration: none
+		background-color: $brandColor
+		border-radius: 50%
+		transition: 0.3s background-color ease-in-out
+		&:hover
+			background-color: $brandDarkColor
+	&__icon
+		flex-shrink: 0
+		width: toRem(24)
+		height: toRem(24)

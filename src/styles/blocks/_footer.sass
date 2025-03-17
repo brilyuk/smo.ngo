@@ -1,0 +1,58 @@
+@import '../base/variables'
+@import '../base/mixins'
+
+.footer
+	position: relative
+	z-index: 50
+	flex-grow: 0
+	flex-shrink: 0
+	flex-basis: auto
+	margin: 0 toRem(20)
+	padding: toRem(40) 0 toRem(20)
+	background-color: $darkColor
+	border-radius: toRem(40) toRem(40) 0 0
+	&__top
+		margin-bottom: toRem(40)
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__logo
+		flex-shrink: 0
+		&-image
+			display: block
+			width: toRem(145)
+			height: toRem(40)
+	&__main
+		margin-bottom: toRem(32)
+	&__bottom
+		font-size: toRem(14)
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+		&-main
+			flex-grow: 1
+			flex-shrink: 1
+			display: flex
+		&-aside
+			flex-shrink: 0
+			margin-left: toRem(48)
+	&__copyright
+		flex-shrink: 0
+		margin-right: toRem(10)
+		color: $greyColor
+	&__add-menu
+		margin: 0
+		padding: 0
+		list-style: none
+		display: flex
+		&-item
+			flex-shrink: 0
+			margin-right: toRem(10)
+			&:last-child
+				margin-right: 0
+		&-link
+			display: block
+			color: $greyColor2
+			text-decoration: none
+			&:hover
+				color: $brandColor
