@@ -1,9 +1,93 @@
 extends layouts/Layout
 
+include mixins/IntroVideo
+include mixins/TextBox
+include mixins/InformBox
+include mixins/AboutBox
+
 append variables
   - var title = 'Sit Down';
 
 block mainContent
-  <div class="container">
-    <h1>Home page</h1>
-  </div>
+  +IntroVideo({
+    video: "assets/video/video.mp4",
+  })
+  +TextBox({
+    titleTop: "<span>SIT DOWN</span> is a cultural and diplomatic campaign marking the <strong>80th anniversary of the end of World War II and the founding of the United Nations.</strong>",
+    titleBottom: "In a time of rising global tensions, we <strong>are bringing art and diplomacy</strong> together to create space for <strong>dialogue, trust, and collaboration across generations.</strong>",
+    image: {
+      src: "assets/img/80-years.svg",
+      alt: "80-years",
+    },
+  })
+  +InformBox({
+    title: "Young people around the world <br> are serious about their future.",
+    lists: {
+      titles: [
+        "They demand",
+        "That world",
+        "Leaders",
+      ],
+      images: [
+        "assets/img/arrow-right.svg",
+        "assets/img/arrow-right.svg",
+        "assets/img/arrow-right.svg",
+      ],
+      texts: [
+        "Sit down with them",
+        "Listen to their voices",
+        "Act responsibly",
+      ],
+    },
+    items: [
+      {
+        image: {
+          src: "assets/img/inform-image-1.svg",
+          alt: "act now",
+        },
+        title: "act now",
+      },
+      {
+        image: {
+          src: "assets/img/inform-image-2.svg",
+          alt: "support",
+        },
+        title: "support",
+      },
+      {
+        image: {
+          src: "assets/img/inform-image-3.svg",
+          alt: "create change",
+        },
+        title: "create change",
+      },
+    ],
+  })
+  +AboutBox({
+    title: "About the project",
+    textFirst: "<span class='about-box__text-orange'>SIT DOWN</span> is an international cultural initiative that offers young people a platform to express their opinions, aspirations, and demands for the future through art. The Peace Child Musical is at the heart of this initiative – a powerful artistic expression that uses music and theatre to reflect young people’s vision of a peaceful and sustainable world, which will be prepared during <span class='about-box__text-blue'>THE PEACE CHILD WEEK IN SLOVENIA.</span>",
+    image: {
+      src: "assets/img/about-image-main.jpg",
+      alt: "sit down",
+    },
+    textSecond: "Supporting our mission is the Declaration on Future Generations, a vital document that demands the voices of young people to be heard, calling for responsible global leadership. Young people are not just asking for change; they want world leaders to take action in alignment with this declaration.",
+    images: [
+      {
+        src: "assets/img/about-image-1.svg",
+        alt: "peace-child",
+      },
+      {
+        src: "assets/img/about-image-2.svg",
+        alt: "slovenia",
+      },
+      {
+        src: "assets/img/about-image-3.svg",
+        alt: "bsa",
+      },
+      {
+        src: "assets/img/about-image-4.svg",
+        alt: "smo",
+      },
+    ],
+    footerTitle: "More than just an artistic event – it is cultural diplomacy in its purest form",
+  })

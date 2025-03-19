@@ -1,0 +1,25 @@
+mixin InformBox(config)
+  .inform-box
+    .container
+      .inform-box__inner
+        .inform-box__title!= config.title
+        .inform-box__box
+          if config.lists.titles
+            .inform-box__box-titles
+              each title in config.lists.titles
+                .inform-box__box-title!= title
+          if config.lists.images
+            .inform-box__box-images
+              each image in config.lists.images
+                .inform-box__box-image
+                  img.inform-box__box-image-i(src=image alt="arrow right")
+          if config.lists.texts
+            .inform-box__box-texts
+              each text in config.lists.texts
+                .inform-box__box-text!= text
+        .inform-box__wrap
+          each item in config.items
+            .inform-box__wrap-item
+              .inform-box__wrap-item-image
+                img.inform-box__wrap-item-image-i(src=item.image.src alt=item.image.alt)
+              .inform-box__wrap-item-title!= item.title

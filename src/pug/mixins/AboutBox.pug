@@ -1,0 +1,16 @@
+mixin AboutBox(config)
+	.about-box
+		.container.container_wide
+			h2.about-box__title!= config.title
+			.about-box__inner
+				.about-box__wrap
+					.about-box__text.about-box__text_first!= config.textFirst
+					.about-box__image
+						img(src=config.image.src alt=config.image.alt)
+				.about-box__text!= config.textSecond
+				.about-box__box
+					each image in config.images
+						.about-box__box-image(class=`about-box__box-image_${image.alt}`)
+							img(src=image.src alt=image.alt)
+				.about-box__footer
+					h3.about-box__footer-title!= config.footerTitle

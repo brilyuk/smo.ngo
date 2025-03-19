@@ -1,0 +1,8 @@
+mixin TextBox(config)
+  .text-box
+    .container
+      .text-box__wrap
+        .text-box__title.text-box__title_top!= config.titleTop
+        .text-box__title.text-box__title_bottom!= config.titleBottom
+        .text-box__image
+          img.text-box__image-i(src=config.image.src alt=config.image.alt)

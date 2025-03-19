@@ -1,0 +1,75 @@
+@import '../base/variables'
+@import '../base/mixins'
+
+.about-box
+	padding: 80px 0 50px
+	background-color: #edf0f2
+	&__title
+		margin-bottom: 40px
+		font-family: $secondFont
+		font-size: 72px
+		font-weight: 500
+		text-transform: uppercase
+		text-align: center
+	&__inner
+		max-width: 1015px
+		margin: 0 auto
+		padding-left: 50px
+	&__text
+		font-size: 25px
+		line-height: 1.15
+		color: #1c2140
+		&_first
+			padding-top: 15px
+		&-orange
+			color: #f28f2b
+			font-weight: bold
+		&-blue
+			color: #29abe3
+			font-weight: bold
+	&__wrap
+		display: flex
+		margin-bottom: 35px
+		gap: 30px
+	&__image
+		width: 510px
+		flex-shrink: 0
+	&__box
+		display: flex
+		align-items: center
+		margin-top: 70px
+		padding: 0 20px
+		&-image
+			&_peace-child
+				width: 293px
+			&_slovenia
+				margin-left: 40px
+				width: 210px
+			&_bsa
+				margin-left: 45px
+				width: 100px
+			&_smo
+				margin-left: 50px
+				width: 136px
+	&__footer
+		position: relative
+		margin-top: 50px
+		margin-left: 25px
+		padding: 10px 0 0
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 18px
+			height: 100%
+			background-color: #f28f2b
+		&-title
+			padding-left: 45px
+			max-width: 900px
+			font-family: $secondFont
+			font-size: 53px
+			line-height: 1
+			font-weight: 500
+			color: #f28f2b
+			text-transform: uppercase

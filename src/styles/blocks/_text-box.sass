@@ -1,0 +1,32 @@
+@import '../base/variables'
+@import '../base/mixins'
+
+.text-box
+	background-color: #F28F2B
+	&__wrap
+		position: relative
+		padding: 35px 0 80px
+		max-width: 780px
+		margin: 0 auto
+	&__title
+		color: #fff
+		font-size: 30px
+		line-height: 1.1
+		span
+			font-family: $secondFont
+			font-size: 45px
+			font-weight: 500
+		strong
+			font-family: $secondFont
+			font-weight: 600
+		&_top
+			margin-bottom: 20px
+			padding-right: 200px
+		&_bottom
+			padding-right: 50px
+	&__image
+		position: absolute
+		right: 5px
+		top: 35px
+		width: 190px
+		
