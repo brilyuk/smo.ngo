@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.32 109.1">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-2 {
+        font-size: 116.19px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+        font-family: ParlourSans-Regular, 'Parlour Sans';
+      }
+
+      .cls-4 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-3 {
+        font-size: 24.99px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <text class="cls-2" transform="translate(0 87.14)"><tspan x="0" y="0">80</tspan></text>
+      <text class="cls-3" transform="translate(71.63 25.79)"><tspan class="cls-1"><tspan x="0" y="0">YEARS</tspan></tspan><tspan class="cls-1"><tspan x="0" y="20.1">SINCE</tspan></tspan><tspan class="cls-1"><tspan x="0" y="40.19">WORLD</tspan></tspan><tspan class="cls-1" x="0" y="60.29">WAR</tspan><tspan class="cls-4" x="26.74" y="60.29"> </tspan><tspan class="cls-1" x="32.99" y="60.29">II</tspan></text>
+    </g>
+  </g>
+</svg>

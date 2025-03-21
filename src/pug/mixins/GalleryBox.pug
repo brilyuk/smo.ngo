@@ -1,0 +1,8 @@
+mixin GalleryBox(config)
+	.gallery-box
+		.container.container_wide
+			.gallery-box__title(data-aos="fade-up")!= config.title
+			.gallery-box__images
+				each image, index in config.images
+					a.gallery-box__image.glightbox(href=image.src, data-gallery="gallery", data-aos="fade-up" data-aos-delay=`${(index+1) * 100}`)
+						img(src=image.src, alt=image.alt)

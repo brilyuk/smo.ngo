@@ -1,5 +1,5 @@
 @import '../base/variables'
-@import '../base/mixins'
+
 
 .inform-box
 	&__inner
@@ -14,7 +14,7 @@
 		text-transform: uppercase
 		font-size: 52px
 		line-height: 1.1
-		color: #29abe3
+		color: $blueColor
 		&::before
 			position: absolute
 			content: ''
@@ -22,7 +22,7 @@
 			top: 0
 			width: 18px
 			height: 100%
-			background-color: #29abe3
+			background-color: $blueColor
 	&__box
 		display: flex
 		justify-content: center
@@ -32,7 +32,7 @@
 			font-family: $secondFont
 			font-size: 44px
 			line-height: 1
-			color: #1c2140
+			color: $siteColor
 			text-transform: uppercase
 			text-align: right
 		&-images
@@ -45,7 +45,7 @@
 			font-size: 31px
 			line-height: 1.3
 			font-weight: 700
-			color: #1c2140
+			color: $siteColor
 	&__wrap
 		display: flex
 		justify-content: space-between
@@ -61,5 +61,5 @@
 			&-title
 				font-size: 29px
 				font-weight: 500
-				color: #f28f2b
+				color: $brandColor
 				text-align: center

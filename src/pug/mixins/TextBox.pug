@@ -2,7 +2,7 @@ mixin TextBox(config)
   .text-box
     .container
       .text-box__wrap
-        .text-box__title.text-box__title_top!= config.titleTop
-        .text-box__title.text-box__title_bottom!= config.titleBottom
-        .text-box__image
+        .text-box__title.text-box__title_top(data-aos="fade-up")!= config.titleTop
+        .text-box__title.text-box__title_bottom(data-aos="fade-up" data-aos-delay="200")!= config.titleBottom
+        .text-box__image(data-aos="fade-left" data-aos-delay="300")
           img.text-box__image-i(src=config.image.src alt=config.image.alt)

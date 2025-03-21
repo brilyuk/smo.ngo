@@ -1,0 +1,33 @@
+@import 'variables'
+
+.form-group
+	position: relative
+	margin-bottom: 12px
+
+.form-control
+	display: block
+	width: 100%
+	padding: 8px 16px
+	height: 45px
+	font-size: 19px
+	line-height: 1.2
+	color: $siteColor
+	border: 2px solid $whiteColor
+	background: transparent
+	outline: 0 none
+	-webkit-appearance: none
+	&:-webkit-autofill
+		-webkit-text-fill-color: $siteColor
+		box-shadow: 0 0 0 1000px $whiteColor inset
+	&::-webkit-input-placeholder
+		color: $siteColor
+		font-weight: 400
+	&::-moz-placeholder
+		color: $siteColor
+		font-weight: 400
+	&:-moz-placeholder
+		color: $siteColor
+		font-weight: 400
+	&:-ms-input-placeholder
+		color: $siteColor
+		font-weight: 400

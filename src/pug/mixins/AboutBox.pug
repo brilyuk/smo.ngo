@@ -1,16 +1,16 @@
 mixin AboutBox(config)
 	.about-box
 		.container.container_wide
-			h2.about-box__title!= config.title
+			h2.about-box__title(data-aos="fade-up")!= config.title
 			.about-box__inner
 				.about-box__wrap
-					.about-box__text.about-box__text_first!= config.textFirst
-					.about-box__image
+					.about-box__text.about-box__text_first(data-aos="fade-up" data-aos-delay="200")!= config.textFirst
+					.about-box__image(data-aos="fade-up" data-aos-delay="300")
 						img(src=config.image.src alt=config.image.alt)
-				.about-box__text!= config.textSecond
-				.about-box__box
+				.about-box__text(data-aos="fade-up" data-aos-delay="300")!= config.textSecond
+				.about-box__box(data-aos="fade-up" data-aos-delay="400")
 					each image in config.images
-						.about-box__box-image(class=`about-box__box-image_${image.alt}`)
+						a.about-box__box-image(class=`about-box__box-image_${image.alt}` href="#")
 							img(src=image.src alt=image.alt)
-				.about-box__footer
+				.about-box__footer(data-aos="fade-up" data-aos-delay="500")
 					h3.about-box__footer-title!= config.footerTitle

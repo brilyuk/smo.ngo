@@ -1,0 +1,14 @@
+mixin EventsBox(config)
+	.events-box
+		.container.container_wide
+			h2.events-box__title(data-aos="fade-up")!= config.title
+			h3.events-box__subtitle(data-aos="fade-up" data-aos-delay="200")!= config.subtitle
+			.events-box__wrap
+				each event, index in config.events
+					.events-box__item(data-aos="fade-up" data-aos-delay=`${(index+1) * 100}`)
+						.events-box__item-image
+							img(src=event.image.src, alt=event.image.alt)
+						if event.text
+							.events-box__item-text!= event.text
+						if event.link
+							a.events-box__item-link.btn.btn-default(href=event.link.href)!= event.link.text

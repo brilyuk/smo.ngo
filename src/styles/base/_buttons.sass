@@ -1,0 +1,39 @@
+@import 'variables'
+
+.btn
+	position: relative
+	display: inline-flex
+	vertical-align: top
+	justify-content: center
+	align-items: center
+	border: 2px solid $blueColor
+	border-radius: 8px
+	overflow: hidden
+	padding: 5px 15px
+	font-size: 26px
+	line-height: 1.2
+	font-weight: 400
+	text-decoration: none
+	text-align: center
+	white-space: nowrap
+	cursor: pointer
+	outline: 0 none
+	user-select: none
+	transition: 0.3s background ease-in-out, 0.3s border-color ease-in-out, 0.3s color ease-in-out
+	&-default
+		color: $brandColor
+		&:hover,
+		&:active
+			background-color: $blueColor
+			color: $whiteColor
+	&-bordered
+		background-color: transparent
+		color: $whiteColor
+		border: 2px solid $whiteColor !important
+		&:hover,
+		&:active
+			background-color: $whiteColor
+			color: $blueColor
+	&-sm
+		padding: 8px 20px
+		font-size: 19px

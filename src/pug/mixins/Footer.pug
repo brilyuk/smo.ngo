@@ -1,33 +1,39 @@
-include Socials
-
 mixin Footer
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__logo">
-          <img class="footer__logo-image" src="assets/img/sit down-logo.png" width="145" height="40" loading="lazy" alt="sit down" />
-        </div>
-        <div class="footer__lang">Lang switcher</div>
-      </div>
-      <div class="footer__main">Main menu</div>
-      <div class="footer__bottom">
-        <div class="footer__bottom-main">
-          <div class="footer__copyright">&copy; 2024 sit down. Всі права захищені.</div>
-          <ul class="footer__add-menu">
-            <li class="footer__add-menu-item">
-              <a class="footer__add-menu-link" href="/privacy.html">Політика конфіденційності</a>
-            </li>
-            <li class="footer__add-menu-item">
-              <a class="footer__add-menu-link" href="/public-offer.html">Публічна оферта</a>
-            </li>
-            <li class="footer__add-menu-item">
-              <a class="footer__add-menu-link" href="/api.html">API</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__bottom-aside">
-          +Socials
-        </div>
-      </div>
-    </div>
-  </footer>
+  footer.footer
+    .container.container_wide
+      .footer__top
+        h2.footer__top-title Get involved
+        .footer__top-aside
+          .footer__top-aside-box
+            a.footer__top-aside-contact.footer__top-aside-contact_email(href="mailto:office@art-bsa.eu") office@art-bsa.eu
+            a.footer__top-aside-contact.footer__top-aside-contact_phone(href="tel:+386082008266") + 386 0 8 200 8266
+          .footer__top-aside-socials
+            a.footer__top-aside-socials-link.footer__top-aside-socials-link_linkedin(href="#")
+              img(src="assets/img/linkedin.svg" alt="linkedin")
+            a.footer__top-aside-socials-link.footer__top-aside-socials-link_instagram(href="#")
+              img(src="assets/img/instagram.svg" alt="instagram")
+            a.footer__top-aside-socials-link.footer__top-aside-socials-link_facebook(href="#")
+              img(src="assets/img/facebook.svg" alt="facebook")
+            a.footer__top-aside-socials-link.footer__top-aside-socials-link_youtube(href="#")
+              img(src="assets/img/youtube.svg" alt="youtube")
+      .footer__subtitle Together we are stronger. Leave us a message.
+      .footer__wrap
+        form.footer__form
+          .form-group
+            input.form-control(type="text" placeholder="First and last name")
+          .form-group
+            input.form-control(type="email" placeholder="Email")
+          .form-group
+            textarea.form-control(placeholder="Message")
+          .footer__form-button.form-group
+            button.btn.btn-bordered.btn-sm(type="submit") send a message
+      .footer__bottom
+        .footer__bottom-wrap
+          a.footer__bottom-item.footer__bottom-item_peace-child(href="#")
+            img(src="assets/img/about-image-1.svg" alt="peace-child")
+          a.footer__bottom-item.footer__bottom-item_slovenia(href="#")
+            img(src="assets/img/about-image-2.svg" alt="slovenia")
+          a.footer__bottom-item.footer__bottom-item_bsa(href="#")
+            img(src="assets/img/about-image-3.svg" alt="bsa")
+          a.footer__bottom-item.footer__bottom-item_smo(href="#")
+            img(src="assets/img/about-image-4.svg" alt="smo")

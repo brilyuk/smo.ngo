@@ -30,24 +30,29 @@ html()&attributes(attrsHtml)
     link(rel='preconnect' href='https://fonts.googleapis.com')
     link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
     link(href='https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap' rel='stylesheet')
+    link(rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css")
     link(href=`${CWD}assets/css/styles.min.css`, type="text/css" rel='stylesheet' id="style-default")
 
   body()&attributes(attrsBody)
 
     block beforeMainContent
 
-    //- +Header
+    +Header
 
     main.main()&attributes(attrsMain)
       block mainContent
     
-    //- +Footer
+    +Footer
 
     block afterMainContent
 
     block layoutScripts
 
     block scripts
+      script(src="https://unpkg.com/aos@next/dist/aos.js")
+      script(src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js")
+      script(src="https://unpkg.com/headroom.js")
       script(src=`${CWD}assets/js/main.js`)
 
     block footerStyles

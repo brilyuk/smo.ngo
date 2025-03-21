@@ -1,6 +1,18 @@
 @import '../base/variables'
-@import '../base/mixins'
+
 
 .header
-	position: relative
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
 	z-index: 150
+	background-color: $whiteColor
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+	&__inner
+		display: flex
+		justify-content: center
+		padding: 20px 0
+	&__logo
+		display: block
+		width: 50px

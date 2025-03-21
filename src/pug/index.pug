@@ -4,14 +4,18 @@ include mixins/IntroVideo
 include mixins/TextBox
 include mixins/InformBox
 include mixins/AboutBox
-
+include mixins/InfoBox
+include mixins/GalleryBox
+include mixins/EventsBox
 append variables
   - var title = 'Sit Down';
 
 block mainContent
+  
   +IntroVideo({
     video: "assets/video/video.mp4",
   })
+  
   +TextBox({
     titleTop: "<span>SIT DOWN</span> is a cultural and diplomatic campaign marking the <strong>80th anniversary of the end of World War II and the founding of the United Nations.</strong>",
     titleBottom: "In a time of rising global tensions, we <strong>are bringing art and diplomacy</strong> together to create space for <strong>dialogue, trust, and collaboration across generations.</strong>",
@@ -20,6 +24,7 @@ block mainContent
       alt: "80-years",
     },
   })
+  
   +InformBox({
     title: "Young people around the world <br> are serious about their future.",
     lists: {
@@ -63,6 +68,7 @@ block mainContent
       },
     ],
   })
+  
   +AboutBox({
     title: "About the project",
     textFirst: "<span class='about-box__text-orange'>SIT DOWN</span> is an international cultural initiative that offers young people a platform to express their opinions, aspirations, and demands for the future through art. The Peace Child Musical is at the heart of this initiative – a powerful artistic expression that uses music and theatre to reflect young people’s vision of a peaceful and sustainable world, which will be prepared during <span class='about-box__text-blue'>THE PEACE CHILD WEEK IN SLOVENIA.</span>",
@@ -90,4 +96,48 @@ block mainContent
       },
     ],
     footerTitle: "More than just an artistic event – it is cultural diplomacy in its purest form",
+  })
+  
+  +InfoBox({
+    title: "Peace child week",
+    boxTitleFirst: "13 - 24 aug <br> 2025",
+    boxTitleSecond: "BRDO PRI KRANJU <br> SLOVENIA",
+    wrapTextFirst: "<span class='info-box__wrap-text_styled'>ARE YOU A YOUNG MUSICIAN OR SINGER?</span> <br> Join us in the <strong>Peace Child Week</strong> and co-create with friends from all over the world the <strong>Peace Child musical</strong>, where your voice will get the platform to demand the global transformation for future generations leading up <strong>to the celebration of the UN's 80th anniversary.</strong>",
+    wrapTextSecond: "As part of the project, up to <span class='info-box__wrap-text_styled'>100 INSTRUMENTALISTS, 100 SINGERS,</span> and <span class='info-box__wrap-text_styled'>5 ACTORS</span> from various countries will take part in the programme, where they will prepare the musical and learn about the United Nations and current global challenges. Through artistic creation, they will gain valuable experience that will help them contribute to a peaceful and sustainable future.",
+  })
+
+  +GalleryBox({
+    title: "Sit down with us",
+    images: [
+      { src: "assets/img/gallery-image.jpg", alt: "gallery create image" },
+      { src: "assets/img/gallery-image.jpg", alt: "gallery create image" },
+      { src: "assets/img/gallery-image.jpg", alt: "gallery create image" },
+      { src: "assets/img/gallery-image.jpg", alt: "gallery create image" },
+      { src: "assets/img/gallery-image.jpg", alt: "gallery create image" },
+      { src: "assets/img/gallery-image.jpg", alt: "gallery create image" },
+    ],
+  })
+
+  +EventsBox({
+    title: "Concerts and events",
+    subtitle: "Experience the music that unites the world.",
+    events: [
+      {
+        image: {
+          src: "assets/img/event-1.jpg",
+          alt: "Ljubljana",
+        },
+        link: {
+          href: "#",
+          text: "buy tickets",
+        },
+      },
+      {
+        image: {
+          src: "assets/img/event-2.jpg",
+          alt: "Ljubljana",
+        },
+        text: "Tickets will be available for donators only"
+      },
+    ],
   })

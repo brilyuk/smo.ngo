@@ -1,5 +1,5 @@
 @import '../base/variables'
-@import '../base/mixins'
+
 
 .footer
 	position: relative
@@ -7,52 +7,66 @@
 	flex-grow: 0
 	flex-shrink: 0
 	flex-basis: auto
-	margin: 0 toRem(20)
-	padding: toRem(40) 0 toRem(20)
-	background-color: $darkColor
-	border-radius: toRem(40) toRem(40) 0 0
+	padding: 70px 0
+	background-color: $blueColor
 	&__top
-		margin-bottom: toRem(40)
 		display: flex
+		justify-content: space-between
 		align-items: center
-		justify-content: space-between
-	&__logo
-		flex-shrink: 0
-		&-image
-			display: block
-			width: toRem(145)
-			height: toRem(40)
-	&__main
-		margin-bottom: toRem(32)
-	&__bottom
-		font-size: toRem(14)
-		display: flex
-		align-items: flex-end
-		justify-content: space-between
-		&-main
-			flex-grow: 1
-			flex-shrink: 1
-			display: flex
+		max-width: 1050px
+		margin: 0 auto 25px
+		&-title
+			margin-bottom: 0
+			font-family: $secondFont
+			font-size: 72px
+			font-weight: 500
+			text-transform: uppercase
 		&-aside
-			flex-shrink: 0
-			margin-left: toRem(48)
-	&__copyright
-		flex-shrink: 0
-		margin-right: toRem(10)
-		color: $greyColor
-	&__add-menu
-		margin: 0
-		padding: 0
-		list-style: none
-		display: flex
+			display: flex
+			gap: 40px
+			&-contact
+				display: block
+				color: $whiteColor
+				text-decoration: none
+				text-align: right
+				transition: opacity 0.2s ease-in-out
+				&:hover
+					opacity: 0.7
+			&-socials
+				display: flex
+				gap: 27px
+				&-link
+					display: block
+					width: 40px
+					transition: opacity 0.2s ease-in-out
+					&:hover
+						opacity: 0.7
+	&__subtitle
+		max-width: 960px
+		margin: 0 auto 20px
+		font-size: 25px
+		color: $whiteColor
+	&__wrap
+		max-width: 900px
+		margin: 0 auto
+	&__form
+		margin-bottom: 20px
+		&-button
+				margin-bottom: 0
+				text-align: center
+	&__bottom
+		max-width: 825px
+		margin: 0 auto
+		&-wrap
+			display: flex
+			justify-content: space-between
+			align-items: center
 		&-item
-			flex-shrink: 0
-			margin-right: toRem(10)
-			&:last-child
-				margin-right: 0
-		&-link
-			display: block
-			color: $greyColor2
-			text-decoration: none
-			&:hover
-				color: $brandColor
+			&_peace-child
+				width: 280px
+			&_slovenia
+				width: 200px
+			&_bsa
+				width: 93px
+			&_smo
+				width: 130px

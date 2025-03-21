@@ -1,5 +1,5 @@
 @import '../base/variables'
-@import '../base/mixins'
+
 
 .about-box
 	padding: 80px 0 50px
@@ -18,14 +18,14 @@
 	&__text
 		font-size: 25px
 		line-height: 1.15
-		color: #1c2140
+		color: $siteColor
 		&_first
 			padding-top: 15px
 		&-orange
-			color: #f28f2b
+			color: $brandColor
 			font-weight: bold
 		&-blue
-			color: #29abe3
+			color: $blueColor
 			font-weight: bold
 	&__wrap
 		display: flex
@@ -63,7 +63,7 @@
 			left: 0
 			width: 18px
 			height: 100%
-			background-color: #f28f2b
+			background-color: $brandColor
 		&-title
 			padding-left: 45px
 			max-width: 900px
@@ -71,5 +71,5 @@
 			font-size: 53px
 			line-height: 1
 			font-weight: 500
-			color: #f28f2b
+			color: $brandColor
 			text-transform: uppercase

@@ -1,0 +1,49 @@
+@import '../base/variables'
+
+
+.info-box
+	padding: 85px 0
+	&__title
+		margin-bottom: 45px
+		font-family: $secondFont
+		font-size: 72px
+		font-weight: 500
+		text-transform: uppercase
+		text-align: center
+	&__box
+		display: flex
+		justify-content: center
+		gap: 50px
+		margin-left: -90px
+		margin-bottom: 60px
+		&-title
+			position: relative
+			padding: 10px 0
+			font-family: $secondFont
+			font-size: 44px
+			line-height: 0.9
+			font-weight: 500
+			color: $blueColor
+			text-transform: uppercase
+			&_first
+				text-align: right
+			&_second
+				&::before
+					content: ''
+					position: absolute
+					top: 0
+					left: -25px
+					width: 12px
+					height: 100%
+					background-color: $brandColor
+	&__wrap
+		display: flex
+		justify-content: space-between
+		&-text
+			max-width: 400px
+			font-size: 25px
+			line-height: 1.15
+			&_styled
+				font-weight: bold
+				color: $brandColor
+				text-transform: uppercase

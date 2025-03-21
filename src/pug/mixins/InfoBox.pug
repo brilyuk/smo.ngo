@@ -1,0 +1,11 @@
+mixin InfoBox(config)
+  .info-box
+    .container
+      h2.info-box__title(data-aos="fade-up")!= config.title
+      .info-box__inner
+        .info-box__box
+          .info-box__box-title.info-box__box-title_first(data-aos="fade-right" data-aos-delay="200")!= config.boxTitleFirst
+          .info-box__box-title.info-box__box-title_second(data-aos="fade-left" data-aos-delay="300")!= config.boxTitleSecond
+        .info-box__wrap
+          .info-box__wrap-text(data-aos="fade-up" data-aos-delay="400")!= config.wrapTextFirst
+          .info-box__wrap-text(data-aos="fade-up" data-aos-delay="500")!= config.wrapTextSecond
